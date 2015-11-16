@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate, LoginViewControllerDelegate {
     
     var window: UIWindow?
-    var loggedIn: Bool = false {
+    var loggedIn: Bool = true {
         didSet {
             if loggedIn == true {
                  loadRootViewController()
@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginViewControllerDelega
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         loadRootViewController()
+        
         return true
     }
     

@@ -113,7 +113,7 @@ class DetailController: UITableViewController, DocumentViewProtocol, UIPopoverPr
     
     @IBAction func infoAction(sender: UIButton) {
         
-        performSegueWithIdentifier(storyBoardSegues.INFORMATION_VIEW_CONTROLLER_SEGUE, sender: sender)
+       // performSegueWithIdentifier(storyBoardSegues.INFORMATION_VIEW_CONTROLLER_SEGUE, sender: sender)
     }
     
     

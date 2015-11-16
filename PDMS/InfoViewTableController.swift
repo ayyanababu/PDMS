@@ -24,6 +24,7 @@ class InfoViewTableController: UITableViewController {
     @IBOutlet weak var docEffectiveDate: UILabel!
     @IBOutlet weak var docLifeCycle: UILabel!
     @IBOutlet weak var docAssociatedCategory: UILabel!
+    @IBOutlet weak var footerView: UIView!
     
     
 
@@ -36,12 +37,11 @@ class InfoViewTableController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.footerView.layer.cornerRadius = 5.0
+        self.footerView.clipsToBounds = true
 
     }
 
   
-    
-    
-
 
 }
